@@ -10,7 +10,10 @@ const cors = require("cors");
 app.use(cors());
 
 // TODO 5: Import and apply Morgan middleware
+const morgan = require("morgan");
+app.use(morgan("dev"));
 
+const { getRandomQuote } = require("./quotes");
 
 // TODO 6.1: Create root route "/"
 
